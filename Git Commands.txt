@@ -159,3 +159,6 @@ git rerere
 Description: It reuses recorded resolution of previously resolved merge conflicts. Please note that rerere.enabled configuration option needs to be set to "true" (git config –global rerere.enabled true) for git rerere to work. Additionally, note that git rerere only applies to conflicts that have been resolved using the same branch and commit.
 
 Syntax: git rerere
+
+Conclusion
+Git can be a highly useful tool in any development project. If your team utilizes Git for version control, you will likely use most of these commands regularly.
