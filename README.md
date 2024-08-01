@@ -1,5 +1,4 @@
-#Git References:
-#Branches using Git Commands
+#Git References: branches using Git Commands
 
 #Switch to a different branch
 
