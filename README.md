@@ -11,6 +11,7 @@ A shortcut to adding all modifications and additions is to use the following git
 
 git add *
 
+...............................................................................................................................................................................................................................................................................
 
 Revert committed changes
 Sometimes, you may not fully test your changes before committing them, which may have undesirable consequences. You can back out your changes by using a git revert command like the following.
@@ -21,3 +22,30 @@ git revert HEAD --no-edit
 
 NOTE: If you don't specify the --no-edit flag, you may be presented with an editor screen showing the message with changes to be reverted. In that case, press the Control (or Ctrl) key simultaneously with X.
 The output shows the most recent commit with the specified id has been reverted.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Merge changes into another branch
+Let's make one more change in your currently active my1stbranch using the following commands.
+
+touch goodfile
+git add goodfile
+git commit -m "added goodfile"
+git log
+
+The output of the log shows the newly added goodfile has been comitted to the my1stbranch branch.
+Note: To exit the git log command, simply press the "Q" key. This action will close the log view and bring you back to the command prompt.
+
+Now, let's merge the contents of the my1stbranch into the main/master branch. We will first need to make the master branch active using the following git checkout command.
+git checkout master
+
+Now, let's merge the changes from my1stbranch into master.
+
+git merge my1stbranch
+git log
+
+Output and log shows the successful merging of the branch.
+Now that changes have been merged into master branch, the my1stbranch can be deleted using the following git branch command with the -d option:
+
+git branch -d my1stbranch
+
