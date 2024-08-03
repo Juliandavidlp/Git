@@ -2,7 +2,7 @@
 
 
 Git Workflows with Git Commands
-In this module, you learned that:
+
 
 GitHub has over 100 million repositories. You can clone a repository and sync changes back to the original. You can also fork a repository and use it as the base for the new project or work on that project independently.
 
