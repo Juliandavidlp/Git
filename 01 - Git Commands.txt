@@ -128,4 +128,5 @@ Description: It reuses recorded resolution of previously resolved merge conflict
 Syntax: git rerere
 
 Conclusion
-Git can be a highly useful tool in any development project. If your team utilizes Git for version control, you will likely use most of these commands regularly.
+Git can be a highly useful tool in any development project. If your team utilizes Git for version control,
+you will likely use most of these commands regularly.
