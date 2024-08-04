@@ -63,85 +63,68 @@ Description: It reverts a commit by applying a new commit. This will create a ne
 
 git config –global user.email <Your GitHub Email>
 
-Description: It sets a global email configuration for Git. This needs to be executed before doing a commit to authenticate the user's email ID. Syntax: 
+Description: It sets a global email configuration for Git. This needs to be executed before doing a commit to authenticate the user's email ID. Syntax: git config –global user.email <Your GitHub Email>
 
-git config –global user.email <Your GitHub Email>
 git config –global user.name <Your GitHub Username>
 
-Description: It sets a global username configuration for Git. This needs to be executed before doing a commit to authenticate users' username.
-
-Syntax: git config –global user.name <Your GitHub Username>
+Description: It sets a global username configuration for Git. This needs to be executed before doing a commit to authenticate users' username. Syntax: git config –global user.name <Your GitHub Username>
 
 git remote
 
 Description: It lists the names of all remote repositories associated with your local repository.
-
 Syntax: git remote
 
 git remote -v
 
-Description: It lists all remote repositories that your local Git repository is connected to, along with the URLs associated with those remote repositories.
-
-Syntax: git remote -v
+Description: It lists all remote repositories that your local Git repository is connected to, along with the URLs associated with those remote repositories. Syntax: git remote -v
 
 git remote add origin <URL>
 
 Description: It adds a remote repository named "origin" with the specified URL.
-
 Syntax: git remote add origin <URL>
 
 git remote rename
 
 Description: The git remote rename command is followed by the name of the remote repository (origin) you want to rename and the new name (upstream) you want to give it. This will rename the "origin" remote repository to "upstream."
-
 Syntax: git remote rename origin upstream
 
 git remote rm <name>
 
 Description: It removes a remote repository with the specified name.
-
 Syntax: git remote rm origin
 
 git format-patch
 
-Description: It generates patches for email submission. These patches can be used for submitting changes via email or for sharing them with others.
-
-Syntax: git format-patch HEAD~3 (creates patches for the last three commits)
+Description: It generates patches for email submission. These patches can be used for submitting changes via email or for sharing them with others. Syntax: git format-patch HEAD~3 (creates patches for the last three commits)
 
 git request-pull
 
-Description: It generates a summary of pending changes for an email request. It helps communicate the changes made in a branch or fork to the upstream repository maintainer.
-
-Syntax: git request-pull origin/main <myfork or branch_name>
+Description: It generates a summary of pending changes for an email request. It helps communicate the changes made in a branch or fork to the upstream repository maintainer. Syntax: 
+git request-pull origin/main <myfork or branch_name>
 
 git send-email
 
-Description: It sends a collection of patches as emails. It allows you to send multiple patch files to recipients via email. Please make sure to set the email address and name using the git config command so that the email client knows the sender's information when sending the emails.
-
-Syntax: git send-email *.patch
+Description: It sends a collection of patches as emails. It allows you to send multiple patch files to recipients via email. Please make sure to set the email address and name using the git config command so that the email client knows the sender's information when sending the emails. Syntax: 
+git send-email *.patch
 
 git am
 
-Description: It applies patches to the repository. It takes a patch file as input and applies the changes specified in the patch file to the repository.
-
-Syntax: git am <patchfile.patch>
+Description: It applies patches to the repository. It takes a patch file as input and applies the changes specified in the patch file to the repository. Syntax: 
+git am <patchfile.patch>
 
 git daemon
 
-Description: It exposes repositories via the Git:// protocol. The Git protocol is a lightweight protocol designed for efficient communication between Git clients and servers.
-
-Syntax: git daemon –base-path=/path/to/repositories
+Description: It exposes repositories via the Git:// protocol. The Git protocol is a lightweight protocol designed for efficient communication between Git clients and servers. Syntax: 
+git daemon –base-path=/path/to/repositories
 
 git instaweb
 
 Description: It instantly launches a web server to browse repositories. It provides a simplified way to view repository contents through a web interface without the need for configuring a full web server.
-
 Syntax: git instaweb –httpd=webrick
 
 git rerere
 
 Description: It reuses recorded resolution of previously resolved merge conflicts. Please note that rerere.enabled configuration option needs to be set to "true" (git config –global rerere.enabled true) for git rerere to work. Additionally, note that git rerere only applies to conflicts that have been resolved using the same branch and commit.
-
 Syntax: git rerere
 
 Conclusion
